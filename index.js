@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   `)
 })
 
+app.get('/port', (req, res) => {
+    res.send(`<div>port is ${PORT}</div>`)
+})
+
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
 })
